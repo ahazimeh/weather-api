@@ -9,21 +9,21 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="search">
         {this.state.input}
         <input
           type="text"
           id="input-name"
-          onChange={event => {
-            this.setState({ input: event.target.value });
-          }}
+          // onChange={event => {
+          //   this.setState({ input: event.target.value });
+          // }}
         />
         <button
           onClick={event => {
             this.props.handleInput(this.state.input);
           }}
         >
-          Say Hello
+          FIND WEATHER
         </button>
       </div>
     );
