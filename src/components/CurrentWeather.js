@@ -2,7 +2,7 @@ import React from "react";
 
 import clear from "../img/weather-icons/clear.svg";
 import "./CurrentWeather.css";
-class Search extends React.Component {
+class CurentWeather extends React.Component {
   state = {
     input: ""
   };
@@ -24,5 +24,5 @@ class Search extends React.Component {
     );
   }
 }
-export default Search;
+export default CurentWeather;
  
