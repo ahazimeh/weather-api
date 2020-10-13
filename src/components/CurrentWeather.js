@@ -11,14 +11,14 @@ class CurentWeather extends React.Component {
     return (
       <div>
       <img className="img0" src={require('../img/weather-icons/mostlycloudy.svg')} alt="storm icon" />
-          <div className="DayWeather">partly cloudy</div>
+          <div className="DayWeather">{this.props.currentweather.weather[0].description}</div>
           <div className="temperature">
           <div className="tempw">Temperature</div>
-          <div className="temp"> 10<span>&#176;</span>  to 11<span>&#176;</span> C</div>
+          <div className="temp">{this.props.currentweather.main.temp_min}<span>&#176;</span>  to {this.props.currentweather.main.temp_max}<span>&#176;</span> C</div>
           </div>
           <div className="weather">
-            <div className="humidity">Humidity</div><div className="humidityvalue">78</div>
-            <div className="pressure">Pressure</div><div className="pressurevalue">1008.48</div>
+            <div className="humidity">Humidity</div><div className="humidityvalue">{this.props.currentweather.main.humidity}</div>
+            <div className="pressure">Pressure</div><div className="pressurevalue">{this.props.currentweather.main.pressure}</div>
           </div>
           </div>
     );

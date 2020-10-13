@@ -23,6 +23,8 @@ class App extends Component {
   render() {
     var list=fakeWeatherData.list;
     var cur;
+    var c = [];
+
     for(var i=0;i<list.length;i++){
       if( list[i].dt_txt.localeCompare("2017-02-17 03:00:00") == 0)
       {
@@ -35,20 +37,44 @@ class App extends Component {
       list[i].main.temp = Math.round(list[i].main.temp);
       list[i].main.temp_min = Math.round(list[i].main.temp_min);
       list[i].main.temp_max = Math.round(list[i].main.temp_max);
+
+      if( list[i].dt_txt.includes("2017-02-17"))
+      {
+        c.push(list[i]);
+        // c[0].main.temp_max=-1;
+
+      }
+
+
+
     }
+
+    function sortf(a,b){
+      // Turn your strings into dates, and then subtract them
+      // to get a value that is either negative, positive, or zero.
+      return a.dt_txt.localeCompare(b.dt_txt);
+    }
+    c.sort(sortf);
+    // http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=57cf9da04987637a23fcbc26f5356e12
+
     return (
       <div>
         {
-        cur//list number we will be using
+          //  c[2].main.temp_max
+          c[1].main.temp
         }
-        {list[0].main.temp}
-        {fakeWeatherData.city.name}
+        {
+          
+        //cur//list number we will be using
+        }
+        {/* {list[0].main.temp}
+        {fakeWeatherData.city.name} */}
         <div className="details">
           {/* <SayHi /> */}
           {/* <SayHello color="black" name={this.state.name} /> */}
           <Search weather={"FIND WEATHER"} handleInput={this.handleInputChange} />
           <CurrentWeather currentweather = {list[5]} handleInput={this.handleInputChange} />
-          <DetailsWeather details = {list} handleInput={this.handleInputChange} />
+          <DetailsWeather details = {c} handleInput={this.handleInputChange} />
           </div>
       </div>
     );
