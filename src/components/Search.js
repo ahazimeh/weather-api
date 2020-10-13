@@ -14,16 +14,17 @@ class Search extends React.Component {
         <input
           type="text"
           id="input-name"
-          // onChange={event => {
-          //   this.setState({ input: event.target.value });
-          // }}
+          onChange={event => {
+            this.setState({ input: event.target.value });
+          }}
         />
         <button
           onClick={event => {
             this.props.handleInput(this.state.input);
           }}
         >
-          FIND WEATHER
+          {/* FIND WEATHER */}
+          {this.props.weather}
         </button>
       </div>
     );

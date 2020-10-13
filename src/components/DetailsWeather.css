@@ -1,0 +1,26 @@
+.times{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  .times div {
+    margin-left: 5%;
+  }
+  .time{
+    margin-top:50px;
+    font-family: "Raleway", sans-serif;
+  }
+  .day{
+    margin-bottom: 40px;
+    font-family: "Raleway", sans-serif;
+  }
+  .times div img{
+    width:40%;
+    margin-top:20px;
+    margin-bottom:20px;
+    display: block;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
