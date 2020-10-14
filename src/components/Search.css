@@ -17,9 +17,8 @@
     font-family: "Raleway", sans-serif;
     
   }
-  #input-name:focus{
-    border-bottom: 1px solid grey;
-  }
+  /* #1B62C0 */
+  
   .cloud button{
     margin-left: 10px;
     background-color: #5879C7;
@@ -90,3 +89,6 @@
             transition-duration: 0.5s;
             transition-timing-function: ease-in-out;
         }
+        #input-name:focus{
+            border-bottom: 1px solid grey;
+          }

@@ -23,7 +23,6 @@
 } */
 
 
-
 .cloud {
   background-color: #9CCEF4;
   
@@ -58,7 +57,12 @@
 .clear .body{
   background-color: #2692E9;
 }
-
+.invis div:nth-child(2){
+  visibility: hidden;
+}
+.invis div:nth-child(3){
+  visibility: hidden;
+}
 
 
 

@@ -6,6 +6,7 @@ import DetailsWeather from "./components/DetailsWeather";
 import fakeWeatherData from "./fakeWeatherData.json";
 
 import "./App.css";
+var flag = -1;
 var colorClass = "cloud";
 var name1 = "London",name = "London";
 class App extends Component {
@@ -104,6 +105,7 @@ class App extends Component {
 
     if(typeof(list)=="undefined"){
       name = name1;
+      flag = -1;
 
       
       // alert(name1);
@@ -117,6 +119,7 @@ class App extends Component {
     }
     else{
       name1 = name;
+      // flag = 1;
 
     }
     if(typeof(list)!="undefined"){
@@ -158,6 +161,16 @@ class App extends Component {
     }
     else{
       isLoaded=false;
+      if(flag ==-1){
+        flag=1;
+        return (
+          <div className={`${colorClass} invis`}>
+            <Search weather={"FIND WEATHER"} handleInput={this.handleInputChange} />
+            <CurrentWeather currentweather = {list[0]} />
+            <DetailsWeather details = {c} />
+            </div>
+      );
+      }
       
     return (
         <div className={`${colorClass}`}>
