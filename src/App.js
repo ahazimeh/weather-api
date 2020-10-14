@@ -29,13 +29,13 @@ class App extends Component {
   componentDidMount(e) {
     console.log(e);
     // ffad005b341ddc6ee289355588b4669e
-    // fetch("http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=2e753ccc114a1bd1d02d58d6adaaeda9")
-    // fetch("http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=ffad005b341ddc6ee289355588b4669e")
-    // fetch("http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=9f89982b3e80a5be4d59b86343791756")
+    // fetch("http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=2e753ccc114a1bd1d02d58d6adaaed")
+    // fetch("http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=ffad005b341ddc6ee289355588b466")
+    // fetch("http://api.openweathermap.org/data/2.5/forecast?q=London&cnt=8&units=metric&appid=9f89982b3e80a5be4d59b863437917")
     // this.props.flagCity=1;
     if(this.state.flagCity==0){
       this.state.flagCity = 1;
-    fetch("http://api.openweathermap.org/data/2.5/forecast?q="+this.state.name+"&cnt=8&units=metric&appid=2e753ccc114a1bd1d02d58d6adaaeda9")
+    fetch("http://api.openweathermap.org/data/2.5/forecast?q="+this.state.name+"&cnt=8&units=metric&appid=2e753ccc114a1bd1d02d58d6adaaed")
       .then(res => res.json())
       .then(
         (result) => {
