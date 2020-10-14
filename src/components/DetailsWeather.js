@@ -12,8 +12,6 @@ class DetailsWeather extends React.Component {
     var items = this.props.details.map((detail) => 
     <li>{detail.dt_txt.substr(11,5)}</li>
     );
-    console.log("hi");
-    console.log(items[0]._self.props.details[1].dt_txt.substr(11,5));
     var l = [];
     
 

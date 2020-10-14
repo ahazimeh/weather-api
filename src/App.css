@@ -18,6 +18,47 @@
 /*  Search bar */
 
 /* Current weather */
-.details{
+/* .clear,.rain{
   background-color: #9CCEF4;
+} */
+
+
+
+.cloud {
+  background-color: #9CCEF4;
+  -webkit-transition-property: background-color transform -webkit-transform color;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: background-color transform -webkit-transform color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
+.rain {
+  background-color: #A2BAC0;
+  /* color: yellow; */
+  -webkit-transition-property: background-color transform -webkit-transform color;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: background-color transform -webkit-transformv color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.clear {
+  background-color: #2692E9;
+  /* color: yellow; */
+  -webkit-transition-property: background-color transform -webkit-transform color;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: background-color transform -webkit-transformv color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+/* rain */
+/* #6F84AB */
+/* #5468A9 */
+
+
+/* clear */
+/* #1B6CD4 */
+/* #1650BF */
