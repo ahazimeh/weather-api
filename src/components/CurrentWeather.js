@@ -8,9 +8,31 @@ class CurentWeather extends React.Component {
   };
 
   render() {
+  // alert(this.props.currentweather.weather[0].id);
+  var icon = [];
+  var id =this.props.currentweather.weather[0].id; 
+  if(id>801)
+     icon.push(<img className="img0" src={require('../img/weather-icons/mostlycloudy.svg')} alt="storm icon" />);
+  else if(id==801)
+  icon.push(<img className="img0" src={require('../img/weather-icons/partlycloudy.svg')} alt="storm icon" />);
+  else if(id==800)
+  icon.push(<img className="img0" src={require('../img/weather-icons/clear.svg')} alt="storm icon" />);
+  else if(id>=700 )
+  icon.push(<img className="img0" src={require('../img/weather-icons/fog.svg')} alt="storm icon" />);
+  else if(id>=600)
+  icon.push(<img className="img0" src={require('../img/weather-icons/snow.svg')} alt="storm icon" />);
+  else if(id>=500)
+  icon.push(<img className="img0" src={require('../img/weather-icons/rain.svg')} alt="storm icon" />);
+  else if(id>=300)
+  icon.push(<img className="img0" src={require('../img/weather-icons/drizzle.svg')} alt="storm icon" />);
+  else if(id<300)
+  icon.push(<img className="img0" src={require('../img/weather-icons/storm.svg')} alt="storm icon" />);
+  
+  
     return (
       <div>
-      <img className="img0" src={require('../img/weather-icons/mostlycloudy.svg')} alt="storm icon" />
+        
+      {icon}
           <div className="DayWeather">{this.props.currentweather.weather[0].description}</div>
           <div className="temperature">
           <div className="tempw">Temperature</div>
