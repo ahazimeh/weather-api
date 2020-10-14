@@ -26,33 +26,44 @@
 
 .cloud {
   background-color: #9CCEF4;
-  -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transform color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  
 }
 .rain {
   background-color: #A2BAC0;
   /* color: yellow; */
-  -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  
 }
 .clear {
   background-color: #2692E9;
   /* color: yellow; */
+  
+}
+
+.clear,.rain,.cloud{
   -webkit-transition-property: background-color transform -webkit-transform color;
   -webkit-transition-duration: 0.5s;
   -webkit-transition-timing-function: ease-in-out;
   transition-property: background-color transform -webkit-transformv color;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
+
 }
+
+.cloud .body{
+  background-color: #9CCEF4;
+}
+.rain .body{
+  background-color: #A2BAC0;
+}
+.clear .body{
+  background-color: #2692E9;
+}
+
+
+
+
+
+
 
 /* rain */
 /* #6F84AB */

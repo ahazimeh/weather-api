@@ -4,12 +4,7 @@
 .cloud .search {
   border: 20px solid #759EDA;
   background-color: #759EDA;
-  -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+  
   
 
 
@@ -20,12 +15,7 @@
     border:none;
     outline: 0;
     font-family: "Raleway", sans-serif;
-    -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+    
   }
   #input-name:focus{
     border-bottom: 1px solid grey;
@@ -37,12 +27,7 @@
     padding:10px;
     outline: 0;
     font-family: "Raleway", sans-serif;
-    -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+    
   }
 
 
@@ -51,12 +36,7 @@
   .rain .search {
     border: 20px solid #6F84AB;
     background-color: #6F84AB;
-    -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+    
   }
   .rain #input-name{
       background-color:#6F84AB;
@@ -64,12 +44,7 @@
       border:none;
       outline: 0;
       font-family: "Raleway", sans-serif;
-      -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+      
     }
     .rain button{
       margin-left: 10px;
@@ -78,12 +53,7 @@
       padding:10px;
       outline: 0;
       font-family: "Raleway", sans-serif;
-      -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+      
     }
 
 
@@ -91,12 +61,7 @@
     .clear .search {
         border: 20px solid #1B6CD4;
         background-color: #1B6CD4;
-        -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+        
       }
       .clear #input-name{
           background-color:#1B6CD4;
@@ -104,12 +69,7 @@
           border:none;
           outline: 0;
           font-family: "Raleway", sans-serif;
-          -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+          
         }
         .clear button{
           margin-left: 10px;
@@ -118,10 +78,15 @@
           padding:10px;
           outline: 0;
           font-family: "Raleway", sans-serif;
-          -webkit-transition-property: background-color transform -webkit-transform color;
-  -webkit-transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-property: background-color transform -webkit-transformv color;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in-out;
+          
+        }
+
+
+        button,#input-name,.search{
+            -webkit-transition-property: background-color transform -webkit-transform color;
+            -webkit-transition-duration: 0.5s;
+            -webkit-transition-timing-function: ease-in-out;
+            transition-property: background-color transform -webkit-transformv color;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
         }
