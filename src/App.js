@@ -97,7 +97,7 @@ class App extends Component {
 
     // this.componentDidMount();
     // alert(this.state.name);
-    var { error, isLoaded, items } = this.state;
+    var { isLoaded} = this.state;
     if(isLoaded){
       var x = this.state.role;
       console.log(x);
